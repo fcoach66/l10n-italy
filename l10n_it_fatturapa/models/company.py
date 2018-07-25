@@ -44,7 +44,7 @@ class ResCompany(models.Model):
 
 
 class AccountConfigSettings(models.TransientModel):
-    _inherit = 'account.config.settings'
+    _inherit = 'res.config.settings'
     fatturapa_fiscal_position_id = fields.Many2one(
         related='company_id.fatturapa_fiscal_position_id',
         string="Fiscal Position",
