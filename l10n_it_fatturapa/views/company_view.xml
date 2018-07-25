@@ -7,7 +7,7 @@
             <field name="model">res.config.settings</field>
             <field name="inherit_id" ref="account.res_config_settings_view_form"/>
             <field name="arch" type="xml">
-                <xpath expr="/form/group[6]" position="after">
+                <group name="main_group" position="inside">
                     <separator string="Fattura PA"/>
                     <group name="fatturapa_settings">
                         <label for="id" string="Configuration"/>
@@ -54,7 +54,7 @@
                             </div>
                         </div>
                     </group>
-                </xpath>
+                </group>
             </field>
         </record>
     </data>
