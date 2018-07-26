@@ -23,7 +23,6 @@
             <field name="model">account.invoice</field>
             <field name="inherit_id" ref="account.invoice_form"></field>
             <field name="arch" type="xml">
-				<!--
         	    <xpath expr="//field[@name='invoice_line_ids']" position="inside">
                     <form string="Invoice Lines">
                         <field name="sequence" widget="handle"/>
