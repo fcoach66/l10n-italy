@@ -10,47 +10,49 @@
 			    <xpath expr="//div[@id='invoicing_settings']" position="after">
 				    <h2>Fattura PA</h2>
                     <div class="row mt16 o_settings_container" id="fatturapa">
-                        <div>
-                            <div>
-                                <label for="fatturapa_fiscal_position_id"/>
-                                <field name="fatturapa_fiscal_position_id" required="1" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_sequence_id"/>
-                                <field name="fatturapa_sequence_id" required="1" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_art73"/>
-                                <field name="fatturapa_art73" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_tax_representative"/>
-                                <field name="fatturapa_tax_representative" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_sender_partner"/>
-                                <field name="fatturapa_sender_partner" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_rea_office"/>
-                                <field name="fatturapa_rea_office" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_rea_number"/>
-                                <field name="fatturapa_rea_number" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_rea_capital"/>
-                                <field name="fatturapa_rea_capital" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_rea_partner"/>
-                                <field name="fatturapa_rea_partner" class="oe_inline"/>
-                            </div>
-                            <div>
-                                <label for="fatturapa_rea_liquidation"/>
-                                <field name="fatturapa_rea_liquidation" class="oe_inline"/>
-                            </div>
+                        <div class="o_setting_right_pane">
+						    <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="fatturapa_fiscal_position_id" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_fiscal_position_id" required="1" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_sequence_id" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_sequence_id" required="1" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_art73" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_art73" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_tax_representative" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_tax_representative" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_sender_partner" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_sender_partner" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_rea_office" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_rea_office" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_rea_number" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_rea_number" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_rea_capital" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_rea_capital" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_rea_partner" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_rea_partner" class="oe_inline"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="fatturapa_rea_liquidation" class="col-md-3 o_light_label"/>
+                                    <field name="fatturapa_rea_liquidation" class="oe_inline"/>
+                                </div>
+						    </div>
                         </div>
                     </div>
                 </xpath>
