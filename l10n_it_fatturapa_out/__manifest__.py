@@ -5,7 +5,7 @@
 
 {
     'name': 'Italian Localization - FatturaPA - Emission',
-    'version': '10.0.1.0.2',
+    'version': '11.0.1.0.2',
     'category': 'Localization/Italy',
     'summary': 'Electronic invoices emission',
     'author': 'Davide Corio, Agile Business Group, Innoviu,'
@@ -15,6 +15,7 @@
     "depends": [
         'l10n_it_fatturapa',
         'l10n_it_split_payment',
+		'partner_fax',
         ],
     "data": [
         'wizard/wizard_export_fatturapa_view.xml',
