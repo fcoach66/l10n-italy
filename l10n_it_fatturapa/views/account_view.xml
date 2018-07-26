@@ -50,20 +50,6 @@
                             <field name="admin_ref"/>
                         </group>
                    </div>
-                    <group string="Related Documents">
-                        <field name="related_documents" nolabel="1">
-                            <tree editable="bottom" string="Related Documents">
-                                <field name="type"></field>
-                                <field name="name"></field>
-                                <field name="lineRef" readonly="1"></field>
-                                <field name="date"></field>
-                                <field name="numitem"></field>
-                                <field name="code"></field>
-                                <field name="cig"></field>
-                                <field name="cup"></field>
-                            </tree>
-                        </field>
-                    </group>
                 </field>
             </field>
         </record>
