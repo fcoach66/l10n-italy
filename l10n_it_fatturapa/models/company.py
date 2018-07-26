@@ -104,59 +104,59 @@ class AccountConfigSettings(models.TransientModel):
              "send invoices to SDI"
         )
 
-    @api.onchange('company_id')
-    def onchange_company_id(self):
-        res = super(AccountConfigSettings, self).onchange_company_id()
-        if self.company_id:
-            company = self.company_id
-            self.fatturapa_fiscal_position_id = (
-                company.fatturapa_fiscal_position_id and
-                company.fatturapa_fiscal_position_id.id or False
-                )
-            self.fatturapa_sequence_id = (
-                company.fatturapa_sequence_id and
-                company.fatturapa_sequence_id.id or False
-                )
-            self.fatturapa_art73 = (
-                company.fatturapa_art73 or False
-                )
-            self.fatturapa_pub_administration_ref = (
-                company.fatturapa_pub_administration_ref or False
-                )
-            self.fatturapa_rea_office = (
-                company.fatturapa_rea_office and
-                company.fatturapa_rea_office.id or False
-                )
-            self.fatturapa_rea_number = (
-                company.fatturapa_rea_number or False
-                )
-            self.fatturapa_rea_capital = (
-                company.fatturapa_rea_capital or False
-                )
-            self.fatturapa_rea_partner = (
-                company.fatturapa_rea_partner or False
-                )
-            self.fatturapa_rea_liquidation = (
-                company.fatturapa_rea_liquidation or False
-                )
-            self.fatturapa_tax_representative = (
-                company.fatturapa_tax_representative and
-                company.fatturapa_tax_representative.id or False
-                )
-            self.fatturapa_sender_partner = (
-                company.fatturapa_sender_partner and
-                company.fatturapa_sender_partner.id or False
-                )
-        else:
-            self.fatturapa_fiscal_position_id = False
-            self.fatturapa_sequence_id = False
-            self.fatturapa_art73 = False
-            self.fatturapa_pub_administration_ref = False
-            self.fatturapa_rea_office = False
-            self.fatturapa_rea_number = False
-            self.fatturapa_rea_capital = False
-            self.fatturapa_rea_partner = False
-            self.fatturapa_rea_liquidation = False
-            self.fatturapa_tax_representative = False
-            self.fatturapa_sender_partner = False
-        return res
+#    @api.onchange('company_id')
+#    def onchange_company_id(self):
+#        res = super(AccountConfigSettings, self).onchange_company_id()
+#        if self.company_id:
+#            company = self.company_id
+#            self.fatturapa_fiscal_position_id = (
+#                company.fatturapa_fiscal_position_id and
+#                company.fatturapa_fiscal_position_id.id or False
+#                )
+#            self.fatturapa_sequence_id = (
+#                company.fatturapa_sequence_id and
+#                company.fatturapa_sequence_id.id or False
+#                )
+#            self.fatturapa_art73 = (
+#                company.fatturapa_art73 or False
+#                )
+#            self.fatturapa_pub_administration_ref = (
+#                company.fatturapa_pub_administration_ref or False
+#                )
+#            self.fatturapa_rea_office = (
+#                company.fatturapa_rea_office and
+#                company.fatturapa_rea_office.id or False
+#                )
+#            self.fatturapa_rea_number = (
+#                company.fatturapa_rea_number or False
+#                )
+#            self.fatturapa_rea_capital = (
+#                company.fatturapa_rea_capital or False
+#                )
+#            self.fatturapa_rea_partner = (
+#                company.fatturapa_rea_partner or False
+#                )
+#            self.fatturapa_rea_liquidation = (
+#                company.fatturapa_rea_liquidation or False
+#                )
+#            self.fatturapa_tax_representative = (
+#                company.fatturapa_tax_representative and
+#                company.fatturapa_tax_representative.id or False
+#                )
+#            self.fatturapa_sender_partner = (
+#                company.fatturapa_sender_partner and
+#                company.fatturapa_sender_partner.id or False
+#                )
+#        else:
+#            self.fatturapa_fiscal_position_id = False
+#            self.fatturapa_sequence_id = False
+#            self.fatturapa_art73 = False
+#            self.fatturapa_pub_administration_ref = False
+#            self.fatturapa_rea_office = False
+#            self.fatturapa_rea_number = False
+#            self.fatturapa_rea_capital = False
+#            self.fatturapa_rea_partner = False
+#            self.fatturapa_rea_liquidation = False
+#            self.fatturapa_tax_representative = False
+#            self.fatturapa_sender_partner = False
+#        return res
