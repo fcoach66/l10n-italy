@@ -22,6 +22,22 @@
             <field name="model">account.invoice</field>
             <field name="inherit_id" ref="account.invoice_form"></field>
             <field name="arch" type="xml">
+			    <xpath expr="//field[@name='invoice_line_ids']" position="inside">
+                    <form string="Invoice Lines">
+                        <field name="sequence" widget="handle"/>
+                        <field name="product_id" domain="[('sale_ok','=',True)]"/>
+                    </form>
+                </xpath>
+                <xpath expr="//field[@name='invoice_line_ids']/tree" position="attributes">
+                    <attribute eval="False" name="editable"></attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="supplier_invoice_lines_not_editable" model="ir.ui.view">
+            <field name="name">supplier_invoice_lines_not_editable</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"></field>
+            <field name="arch" type="xml">
                 <xpath expr="//field[@name='invoice_line_ids']/tree" position="attributes">
                     <attribute eval="False" name="editable"></attribute>
                 </xpath>
