@@ -8,8 +8,8 @@
             <field name="inherit_id" ref="account.res_config_settings_view_form"/>
             <field name="arch" type="xml">
 			    <xpath expr="//div[@id='invoicing_settings']" position="after">
-                    <div class="row mt16">
-                        <label for="id" string="Configuration"/>
+				    <h2>Fattura PA</h2>
+                    <div class="row mt16 o_settings_container" id="fatturapa">
                         <div>
                             <div>
                                 <label for="fatturapa_fiscal_position_id"/>
