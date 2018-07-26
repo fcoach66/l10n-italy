@@ -38,20 +38,5 @@
             </field>
         </record>
 
-        <record id="view_invoice_line_form_fatturapa" model="ir.ui.view">
-            <field name="name">account.invoice.line.fatturapa</field>
-            <field name="model">account.invoice.line</field>
-            <field name="inherit_id" ref="account.view_invoice_line_form"></field>
-            <field name="arch" type="xml">
-                <field name="name" position="after">
-                    <separator string="FatturaPA"></separator>
-                    <div id="admin_ref">
-                        <group>
-                            <field name="admin_ref"/>
-                        </group>
-                   </div>
-                </field>
-            </field>
-        </record>
     </data>
 </openerp>
